@@ -37,8 +37,8 @@ jobs:
 
       - name: Build with Gradle
         run: |
-          chmod +x ./blog/gradlew
-          ./blog/gradlew build -x test
+          chmod +x ./gradlew
+          ./gradlew build -x test
 
       # ID, PW를 이용해 Docker hub에 로그인
       - name: Login to DockerHub
